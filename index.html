@@ -27,7 +27,7 @@
 
 <h2>1. 当方が収集する情報</h2>
 <p>当方自身は、本アプリを通じて、氏名・メールアドレス・位置情報・連絡先を集めません。アカウント登録はありません。当方はゲーム用のサーバーを運用しておらず、セーブや設定が当方に送られることはありません。</p>
-<p>バナーを出しているあいだ、Google AdMob の SDK が広告のリクエストを Google に送ります。このとき Google が使う情報は、広告ID、IPアドレス（おおよその地域の推定に使われます）、端末の種類やOSの版、広告の表示やタップの記録、不具合の診断情報です。これらは Google が受け取り、当方のサーバーへは送りません。広告はバナーが一つだけで、全画面の広告、動画を見て報酬をもらう広告、複数の広告会社への仲介はありません。</p>
+<p>広告を読み込むとき、Google AdMob の SDK が広告のリクエストを Google に送ります。このとき Google が使う情報は、広告ID、IPアドレス（おおよその地域の推定に使われます）、端末の種類やOSの版、広告の表示やタップの記録、不具合の診断情報です。これらは Google が受け取り、当方のサーバーへは送りません。広告は、ゲーム画面の下のバナー一つと、迷宮から城へ戻るときの全画面の広告だけです。動画を見て報酬をもらう広告や、複数の広告会社への仲介はありません。</p>
 <p>Google がこれらの情報をどう使うかは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサービスを使うサイトやアプリから収集した情報の Google による使用</a>と<a href="https://policies.google.com/privacy?hl=ja">Google プライバシー ポリシー</a>に書かれています。</p>
 <p>広告IDは、端末の「設定」→「プライバシー」→「広告」（機種や Android の版によっては「設定」→「Google」→「広告」）で、リセットまたは削除できます。削除すると、本アプリを含むアプリは広告IDを使えなくなります。Google アカウントにもとづくパーソナライズ広告は、<a href="https://myadcenter.google.com/?hl=ja">マイ アド センター</a>でオフにできます。</p>
 <p>欧州経済領域（EEA）・英国・スイスなど、法令で同意が必要な地域では、起動時に Google の同意画面を出し、同意の選択が済むまで広告を読み込みません。選んだ内容は、設定の「その他」→「プライバシーの設定」からいつでも見直せます（この項目は同意が必要な地域でだけ出ます）。</p>
@@ -51,7 +51,8 @@
 
 <h2>4. 広告と、広告を消す購入</h2>
 <p>本アプリは無料です。収入は広告です。ゲーム画面の下、画面の外に、AdMob のバナーを一つ出します。地の文や操作ボタンの上には重ねません。</p>
-<p>広告を出さなくする買い切りが一つあります。予定価格は500円です。商品の名前は remove_ads です。価格は Google Play 側で決まり、本アプリの中では決められません。画面には、Play が返した価格を出し、無いときは500円と出します。購入が済むとバナーを消し、新しい広告は読み込みません。</p>
+<p>迷宮から城へ戻るときに、AdMob の全画面の広告（インタースティシャル広告）を出すことがあります。前の全画面の広告から（まだ出していなければ起動から）5分たっていないときは出しません。戦闘や会話の途中には出しません。広告を閉じると城の画面に戻ります。</p>
+<p>広告を出さなくする買い切りが一つあります。予定価格は500円です。商品の名前は remove_ads です。価格は Google Play 側で決まり、本アプリの中では決められません。画面には、Play が返した価格を出し、無いときは500円と出します。購入が済むとバナーを消し、全画面の広告も出さず、新しい広告は読み込みません。</p>
 <p>購入が済むと、端末内の設定に、広告を消した印だけを残します。この印は設定に含まれます。購入の状態は Google Play に問い合わせて戻せます。Play が購入を無効と返したときは、印を消します。決済そのものは Google Play が扱い、当方のサーバーへは送りません。支払い情報の扱いは <a href="https://policies.google.com/privacy?hl=ja">Google プライバシー ポリシー</a>に従います。</p>
 
 <h2>5. Android のバックアップ</h2>
@@ -61,7 +62,7 @@
 <p>当方は、Google Play Console を通じて、Google が集計したクラッシュ件数・端末の種類などの統計情報を受け取ることがあります。これは、端末で使用状況や診断情報の共有を許可している利用者について Google が集めるもので、当方が個人を特定することはできません。当方はこの情報を本アプリの不具合の修正と品質の向上にだけ使います。</p>
 
 <h2>7. 第三者への提供</h2>
-<p>当方は、集めた情報を販売しません。バナーを出しているあいだ、広告のリクエストは Google AdMob が受け取ります。当方のサーバーへは送りません。</p>
+<p>当方は、集めた情報を販売しません。広告を読み込むとき、広告のリクエストは Google AdMob が受け取ります。当方のサーバーへは送りません。</p>
 
 <h2>8. 子どもの利用</h2>
 <p>本アプリは13歳未満の子どもを対象としたものではありません。当方は13歳未満の子どもの個人情報を、それと知りながら収集することはありません。</p>
@@ -88,7 +89,7 @@
 
 <h2>1. Information we collect</h2>
 <p>We ourselves do not collect your name, email address, location, or contacts through the App. There is no account registration. We do not operate any game servers, and the App does not send saves or settings to us.</p>
-<p>While a banner is showing, the Google AdMob SDK sends ad requests to Google. Google uses the advertising ID, the IP address (used to estimate an approximate region), the device type and OS version, records of ad views and taps, and diagnostic data. Google receives this information; it is not sent to our servers. The App shows one banner only. It does not show full-screen ads, rewarded ads, or ads from a mediation network.</p>
+<p>When the App loads an ad, the Google AdMob SDK sends an ad request to Google. Google uses the advertising ID, the IP address (used to estimate an approximate region), the device type and OS version, records of ad views and taps, and diagnostic data. Google receives this information; it is not sent to our servers. The App shows only one banner below the game and a full-screen ad when you return from the dungeon to the castle. It does not show rewarded ads or ads from a mediation network.</p>
 <p>How Google uses this information is described in <a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from sites or apps that use our services</a> and in the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
 <p>You can reset or delete your advertising ID in your device's Settings → Privacy → Ads (on some devices and Android versions, Settings → Google → Ads). Once it is deleted, apps, including this App, can no longer use it. You can turn off personalized ads tied to your Google account in <a href="https://myadcenter.google.com/?hl=en">My Ad Center</a>.</p>
 <p>In regions where the law requires consent, such as the European Economic Area (EEA), the UK, and Switzerland, the App shows Google's consent form at launch and does not load ads until you have made your choice. You can review your choice at any time in Settings → OTHER → PRIVACY OPTIONS (this item appears only in those regions).</p>
@@ -112,7 +113,8 @@
 
 <h2>4. Ads and the purchase that removes them</h2>
 <p>The App is free. Income is from ads. One AdMob banner sits below the game, outside the game surface. It does not cover the narration or the controls.</p>
-<p>One one-time purchase removes ads. The planned price is 500 yen. The product name is remove_ads. The price is set by Google Play, not by the App. The screen shows the price Play returns, or 500 yen when Play has not returned one. When the purchase is owned, the banner is removed and a new ad is not loaded.</p>
+<p>When you return from the dungeon to the castle, the App may show an AdMob full-screen (interstitial) ad. It is not shown if less than 5 minutes have passed since the previous full-screen ad (or since launch, if none has been shown yet). It is never shown during a battle or a conversation. Closing the ad returns you to the castle.</p>
+<p>One one-time purchase removes ads. The planned price is 500 yen. The product name is remove_ads. The price is set by Google Play, not by the App. The screen shows the price Play returns, or 500 yen when Play has not returned one. When the purchase is owned, the banner is removed, no full-screen ad is shown, and a new ad is not loaded.</p>
 <p>When the purchase is owned, the App stores only a flag in its settings on the device. That flag is part of the settings. The purchase can be restored by asking Google Play. If Play reports the purchase as not owned, the App clears the flag. Google Play processes the payment. The App does not send payment details to our servers. Payment information is handled under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
 
 <h2>5. Android backup</h2>
@@ -122,7 +124,7 @@
 <p>Through Google Play Console, we may receive statistics compiled by Google, such as crash counts and device types. Google collects these from users who have allowed their device to share usage and diagnostics data, and we cannot identify any individual from them. We use them only to fix bugs and improve the App.</p>
 
 <h2>7. Sharing with third parties</h2>
-<p>We do not sell your information. While a banner is showing, Google AdMob receives the ad request. It is not sent to our servers.</p>
+<p>We do not sell your information. When the App loads an ad, Google AdMob receives the ad request. It is not sent to our servers.</p>
 
 <h2>8. Children</h2>
 <p>The App is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
