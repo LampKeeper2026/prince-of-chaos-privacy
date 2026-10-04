@@ -28,7 +28,8 @@
 <h2>1. 当方が収集する情報</h2>
 <p>当方自身は、本アプリを通じて、氏名・メールアドレス・位置情報・連絡先を集めません。アカウント登録はありません。当方はゲーム用のサーバーを運用しておらず、セーブや設定が当方に送られることはありません。</p>
 <p>バナーを出しているあいだ、Google AdMob の SDK が広告のリクエストを Google に送ります。このとき Google が使う情報は、広告ID、IPアドレス（おおよその地域の推定に使われます）、端末の種類やOSの版、広告の表示やタップの記録、不具合の診断情報です。これらは Google が受け取り、当方のサーバーへは送りません。広告はバナーが一つだけで、全画面の広告、動画を見て報酬をもらう広告、複数の広告会社への仲介はありません。</p>
-<p>Google がこれらの情報をどう使うかは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサービスを使うサイトやアプリから収集した情報の Google による使用</a>に書かれています。広告IDは、端末の「設定」→「プライバシー」→「広告」で、リセットまたは削除できます。</p>
+<p>Google がこれらの情報をどう使うかは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサービスを使うサイトやアプリから収集した情報の Google による使用</a>と<a href="https://policies.google.com/privacy?hl=ja">Google プライバシー ポリシー</a>に書かれています。</p>
+<p>広告IDは、端末の「設定」→「プライバシー」→「広告」（機種や Android の版によっては「設定」→「Google」→「広告」）で、リセットまたは削除できます。削除すると、本アプリを含むアプリは広告IDを使えなくなります。Google アカウントにもとづくパーソナライズ広告は、<a href="https://myadcenter.google.com/?hl=ja">マイ アド センター</a>でオフにできます。</p>
 <p>欧州経済領域（EEA）・英国・スイスなど、法令で同意が必要な地域では、起動時に Google の同意画面を出し、同意の選択が済むまで広告を読み込みません。選んだ内容は、設定の「その他」→「プライバシーの設定」からいつでも見直せます（この項目は同意が必要な地域でだけ出ます）。</p>
 
 <h2>2. 端末内に保存する情報</h2>
@@ -43,12 +44,15 @@
   <li><strong>言語設定</strong>：端末の言語設定を読み、最初に表示する言語（日本語または英語）を決めます。言語設定を外部に送信することはありません。</li>
   <li><strong>振動</strong>：画面のボタン操作に合わせて端末を振動させるため、振動の権限を使います。設定で止められます。</li>
   <li><strong>ゲームパッド</strong>：接続されたゲームパッドからの入力を、ゲームの操作にだけ使います。</li>
+  <li><strong>ネットワーク</strong>：インターネットと通信状態の確認の権限は、広告の読み込みと、Google Play での購入の確認にだけ使います。それ以外の通信はしません。</li>
+  <li><strong>広告ID</strong>：広告IDの権限（<code>com.google.android.gms.permission.AD_ID</code>）は AdMob の SDK が含めるもので、上の 1. のとおり広告にだけ使われます。</li>
+  <li><strong>Google Play の課金</strong>：広告を消す購入を Google Play Billing で行うため、課金の権限を使います。</li>
 </ul>
 
 <h2>4. 広告と、広告を消す購入</h2>
 <p>本アプリは無料です。収入は広告です。ゲーム画面の下、画面の外に、AdMob のバナーを一つ出します。地の文や操作ボタンの上には重ねません。</p>
 <p>広告を出さなくする買い切りが一つあります。予定価格は500円です。商品の名前は remove_ads です。価格は Google Play 側で決まり、本アプリの中では決められません。画面には、Play が返した価格を出し、無いときは500円と出します。購入が済むとバナーを消し、新しい広告は読み込みません。</p>
-<p>購入が済むと、端末内の設定に、広告を消した印だけを残します。この印は設定に含まれます。購入の状態は Google Play に問い合わせて戻せます。Play が購入を無効と返したときは、印を消します。決済そのものは Google Play が扱い、当方のサーバーへは送りません。</p>
+<p>購入が済むと、端末内の設定に、広告を消した印だけを残します。この印は設定に含まれます。購入の状態は Google Play に問い合わせて戻せます。Play が購入を無効と返したときは、印を消します。決済そのものは Google Play が扱い、当方のサーバーへは送りません。支払い情報の扱いは <a href="https://policies.google.com/privacy?hl=ja">Google プライバシー ポリシー</a>に従います。</p>
 
 <h2>5. Android のバックアップ</h2>
 <p>利用者が端末のバックアップを有効にしている場合、Android の機能により、本アプリのセーブデータ・設定・トロフィーが利用者自身の Google アカウントに保存され、機種変更のときに引き継がれることがあります。エラー記録は対象に含めません。このバックアップは Google が管理するもので、当方はその内容を見ることができません。</p>
@@ -66,7 +70,7 @@
 <p>本アプリをアンインストールすると、端末内に保存されたセーブデータ・設定・トロフィー・エラー記録は削除されます。Google アカウントに保存されたバックアップは、端末の設定または Google ドライブから削除できます。</p>
 
 <h2>10. このポリシーの変更</h2>
-<p>当方は、必要に応じてこのポリシーを変更することがあります。変更した場合は、このページで内容と最終更新日を更新します。</p>
+<p>当方は、必要に応じてこのポリシーを変更することがあります。変更した場合は、このページで内容と最終更新日を更新します。このポリシーは <a href="https://lampkeeper2026.github.io/prince-of-chaos-privacy/">https://lampkeeper2026.github.io/prince-of-chaos-privacy/</a> で公開しています。</p>
 
 <h2>11. お問い合わせ</h2>
 <p>このポリシーや本アプリに関するお問い合わせは、次の連絡先までお願いします。<br>
@@ -85,7 +89,8 @@
 <h2>1. Information we collect</h2>
 <p>We ourselves do not collect your name, email address, location, or contacts through the App. There is no account registration. We do not operate any game servers, and the App does not send saves or settings to us.</p>
 <p>While a banner is showing, the Google AdMob SDK sends ad requests to Google. Google uses the advertising ID, the IP address (used to estimate an approximate region), the device type and OS version, records of ad views and taps, and diagnostic data. Google receives this information; it is not sent to our servers. The App shows one banner only. It does not show full-screen ads, rewarded ads, or ads from a mediation network.</p>
-<p>How Google uses this information is described in <a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from sites or apps that use our services</a>. You can reset or delete your advertising ID in your device's Settings → Privacy → Ads.</p>
+<p>How Google uses this information is described in <a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from sites or apps that use our services</a> and in the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
+<p>You can reset or delete your advertising ID in your device's Settings → Privacy → Ads (on some devices and Android versions, Settings → Google → Ads). Once it is deleted, apps, including this App, can no longer use it. You can turn off personalized ads tied to your Google account in <a href="https://myadcenter.google.com/?hl=en">My Ad Center</a>.</p>
 <p>In regions where the law requires consent, such as the European Economic Area (EEA), the UK, and Switzerland, the App shows Google's consent form at launch and does not load ads until you have made your choice. You can review your choice at any time in Settings → OTHER → PRIVACY OPTIONS (this item appears only in those regions).</p>
 
 <h2>2. Information stored on your device</h2>
@@ -100,12 +105,15 @@
   <li><strong>Language setting</strong>: the App reads your device language to choose the initial display language (Japanese or English). The language setting is never sent anywhere.</li>
   <li><strong>Vibration</strong>: the App uses the vibration permission to give haptic feedback on the on-screen buttons. You can turn this off in the settings.</li>
   <li><strong>Game controllers</strong>: input from a connected game controller is used only to control the game.</li>
+  <li><strong>Network</strong>: the internet and network-state permissions are used only to load ads and to check purchases with Google Play. The App makes no other network connections.</li>
+  <li><strong>Advertising ID</strong>: the advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>) is included by the AdMob SDK and is used only for ads, as described in section 1.</li>
+  <li><strong>Google Play billing</strong>: the App uses the billing permission to make the ad-removal purchase through Google Play Billing.</li>
 </ul>
 
 <h2>4. Ads and the purchase that removes them</h2>
 <p>The App is free. Income is from ads. One AdMob banner sits below the game, outside the game surface. It does not cover the narration or the controls.</p>
 <p>One one-time purchase removes ads. The planned price is 500 yen. The product name is remove_ads. The price is set by Google Play, not by the App. The screen shows the price Play returns, or 500 yen when Play has not returned one. When the purchase is owned, the banner is removed and a new ad is not loaded.</p>
-<p>When the purchase is owned, the App stores only a flag in its settings on the device. That flag is part of the settings. The purchase can be restored by asking Google Play. If Play reports the purchase as not owned, the App clears the flag. Google Play processes the payment. The App does not send payment details to our servers.</p>
+<p>When the purchase is owned, the App stores only a flag in its settings on the device. That flag is part of the settings. The purchase can be restored by asking Google Play. If Play reports the purchase as not owned, the App clears the flag. Google Play processes the payment. The App does not send payment details to our servers. Payment information is handled under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
 
 <h2>5. Android backup</h2>
 <p>If you have turned on device backup, Android may save the App's save data, settings, and trophies to your own Google account and restore them when you move to a new device. The error log is excluded. This backup is managed by Google, and we cannot see its contents.</p>
@@ -123,7 +131,7 @@
 <p>Uninstalling the App deletes the save data, settings, trophies, and error log stored on your device. Backups saved to your Google account can be deleted from your device settings or from Google Drive.</p>
 
 <h2>10. Changes to this policy</h2>
-<p>We may update this policy when needed. Any changes will be posted on this page together with the new "Last updated" date.</p>
+<p>We may update this policy when needed. Any changes will be posted on this page together with the new "Last updated" date. This policy is published at <a href="https://lampkeeper2026.github.io/prince-of-chaos-privacy/">https://lampkeeper2026.github.io/prince-of-chaos-privacy/</a>.</p>
 
 <h2>11. Contact</h2>
 <p>For questions about this policy or the App, please contact:<br>
